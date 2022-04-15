@@ -13,13 +13,45 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <title>Starter Templates</title>
+  <title>Julius Portfolio.</title>
+  <style>
+    header{
+    background-image: url(/static/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+@media screen and (max-width: 670px){
+          header{
+              min-height: 500px;
+          }
+      }
+  </style>
 </head>
 <body>
 
   <!-- navbar -->
-    <header>
-       
+    <header >
+         <nav class="nav-wrapper #000000 black">
+            <div class="container">
+                <a href="#" class="brand-logo">Julius Mallya</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class=" right hide-on-med-and-down">
+                    <li><a href="#" class="tooltipped" data-tooltip="My works">My works</a></li>
+                    <li><a href="#" class="tooltipped" data-tooltip="Contact Me">Contact Me</a></li>
+                    <li><a href="#"class="tooltipped" data-tooltip="My services">My services</a></li>
+                </ul>
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                  <li><a href="#">Website's</a></li>
+                  <li><a href="#">Conacts</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
     </header>
 
   <!-- photo / grid -->
@@ -28,18 +60,82 @@
 
   <!-- services / tabs -->
 
+<section class="container section">
+  <div class="row">
+    <div class="col l4 s12">
+      <h2 class="indigo-text">About Me:</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+      
+    </div>
+   <div class="col l6 offset-l2 ">
+    <ul class="tabs">
+      <li class="s6 col tab">
+        <a href="#website_designing" class="indigo-text">Website Designing</a>
+      </li>
+       <li class="s6 col tab">
+        <a href="#website_developing" class="indigo-text">Website Developing</a>
+      </li>
+    </ul>  
+    <div class="s12 col" id="website_developing">
+      <P class="flow-text indigo-text text-darken-3">WEBSITE DEVELOPING</P>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+    </div>
+     <div class="s12 col" id="website_designing">
+      <P class="flow-text indigo-text text-darken-3">WEBSITE DESIGNING</P>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+    </div>
+  </div>
+   </div>
+  </div>
+</section>
   <!-- parallax -->
-
+ <div class="parallax-container">
+    <div class="parallax">
+      <img src="/static/images/team.jpg" class="responsive-img" alt="">
+    </div>
+  </div>
+  <!-- contact form -->
+<div class="container">
+  <div class="row">
+    <div class="col s12 l6">
+      <h2 class="indigo-text">Get contact</h2>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+    </div>
+  </div>
+</div>
   <!-- contact form -->
 
   <!-- footer -->
+{% block content %}
+
+{% endblock content %}
+
+
+
+
 
   <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script>
     $(document).ready(function(){
 
+
+      M.AutoInit();
     });
   </script>
 </body>
