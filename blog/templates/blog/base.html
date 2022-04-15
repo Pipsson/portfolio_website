@@ -15,6 +15,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>Julius Portfolio.</title>
   <style>
+    .myfooter{
+
+      margin-top: 20px;
+    }
+  
     header{
     background-image: url(/static/images/header.jpg);
     background-size: cover;
@@ -22,31 +27,37 @@
     min-height: 500px;
 }
 @media screen and (max-width: 670px){
+
           header{
               min-height: 500px;
           }
       }
   </style>
 </head>
-<body>
+<body class=" #212121 grey darken-4">
 
   <!-- navbar -->
     <header >
          <nav class="nav-wrapper #000000 black">
             <div class="container">
+              
                 <a href="#" class="brand-logo">Julius Mallya</a>
                 <a href="" class="sidenav-trigger" data-target="mobile-menu">
                   <i class="material-icons">menu</i>
                 </a>
                 <ul class=" right hide-on-med-and-down">
-                    <li><a href="#" class="tooltipped" data-tooltip="My works">My works</a></li>
-                    <li><a href="#" class="tooltipped" data-tooltip="Contact Me">Contact Me</a></li>
-                    <li><a href="#"class="tooltipped" data-tooltip="My services">My services</a></li>
+                    <li><a href="#about" class="tooltipped"  data-position="down" data-tooltip="About Me"> About Me </a></li>
+                    <li><a href="#contact" class="tooltipped"  data-position="down" data-tooltip="Contact Me"> Contact Me</a></li>
+                    <li><a href="#services" class="tooltipped"  data-position="down" data-tooltip="My services">My services</a></li>
+                    <li><a href="#moto"class="tooltipped"  data-position="down" data-tooltip="My moto">My Motto</a></li>
+                    <li><a href="#works"class="tooltipped"  data-position="down" data-tooltip="About Me">View my  Works</a></li>
                 </ul>
-                <ul class="sidenav grey lighten-2" id="mobile-menu">
-                  <li><a href="#">Website's</a></li>
-                  <li><a href="#">Conacts</a></li>
-                  <li><a href="#">Services</a></li>
+                <ul class="sidenav black" id="mobile-menu">
+                  <li><a class="white-text" href="#">About Me</a></li>
+                  <li><a  class="white-text" href="#">Website's</a></li>
+                  <li><a  class="white-text" href="#">Contacts</a></li>
+                  <li><a  class="white-text" href="#">Services</a></li>
+                  <li><a  class="white-text"  href="#">My motto</a></li>
                 </ul>
 
             </div>
@@ -55,16 +66,16 @@
     </header>
 
   <!-- photo / grid -->
-
+  
   <!-- parallax -->
 
   <!-- services / tabs -->
 
-<section class="container section">
+<section class="container section  scrollspy" id="services">
   <div class="row">
     <div class="col l4 s12">
-      <h2 class="indigo-text">About Me:</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+      <p class="white-text"> SERVICES</p>
+      <p class=" white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
          repellat, nesciunt nam rem voluptatum sequi
          deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
       </p>
@@ -73,23 +84,23 @@
    <div class="col l6 offset-l2 ">
     <ul class="tabs">
       <li class="s6 col tab">
-        <a href="#website_designing" class="indigo-text">Website Designing</a>
+        <a href="#website_designing" class="black-text">Website Designing</a>
       </li>
        <li class="s6 col tab">
-        <a href="#website_developing" class="indigo-text">Website Developing</a>
+        <a href="#website_developing" class="black-text">Website Developing</a>
       </li>
     </ul>  
     <div class="s12 col" id="website_developing">
-      <P class="flow-text indigo-text text-darken-3">WEBSITE DEVELOPING</P>
-      <p>
+      <P class="flow-text white-text text-darken-3">WEBSITE DEVELOPING</P>
+      <p class="white-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
          repellat, nesciunt nam rem voluptatum sequi
          deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
       </p>
     </div>
      <div class="s12 col" id="website_designing">
-      <P class="flow-text indigo-text text-darken-3">WEBSITE DESIGNING</P>
-      <p>
+      <P class="flow-text white-text text-darken-3">WEBSITE DESIGNING</P>
+      <p class=" white-text">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
          repellat, nesciunt nam rem voluptatum sequi
          deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
@@ -106,11 +117,11 @@
     </div>
   </div>
   <!-- contact form -->
-<div class="container">
+<div class="container" id="about">
   <div class="row">
     <div class="col s12 l6">
-      <h2 class="indigo-text">Get contact</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+      <p class="white-text"> ABOUT ME</p>
+       <p class="white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
          repellat, nesciunt nam rem voluptatum sequi
          deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
       </p>
@@ -119,7 +130,91 @@
 </div>
   <!-- contact form -->
 
+  <div class="slider  " id="moto">
+    <ul class="slides">
+      <li>
+        <img src="/static/images/coding.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/coding2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+          <h3 class="black-text">Maintanance of Website</h3>
+          <h5 class="  light white-text text-lighten-3">Maintanance of Website</h5>
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/hosting.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Welcome to Proffesional to Host Your Webaite:</h3>
+          <h5 class="light grey-text text-lighten-3">We ensure you got your preference domain name </h5>
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/webserver.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
   <!-- footer -->
+<footer class="page-footer grey darken-3 myfooter" id="contact" >
+      <div class="container">
+        <div class="row">
+          <div class="col s12  l5">
+              <p > <a class="white-text " href="#">ANY PROJECT ? TELL ME
+                <i class="material-icons left">work</i>
+                </a></p>
+            <div class="input-field form-below">
+              <i class="material-icons prefix">email</i>
+              <input type="email" class="email">
+              <label for="email" class="white-text" > Your Email</label>
+            </div>
+            <div class="input-field form-below">
+              <i class="material-icons prefix">message</i>
+              <textarea  id="message" class="materialize-textarea"></textarea>
+              <label for="message" class="white-text" > Tell Me Your Project</label>
+            </div>
+           
+            <button class="btn waves-effect waves-light black" type="submit" name="action">SUBMIT NOW
+              <i class="material-icons right white-text">send</i>
+            </button>
+           </form>
+          </div>
+          <div class="col s12 l5 offset-l2">
+            
+           <P>
+            <a  class="white-text" href="#">CONTACT ME
+                <i class="material-icons left">phone</i> <br>
+            </a>
+           <form action="">
+           
+           <ul class="">
+              <li><a class=" white-text" href=""> <i class="fab fa-instagram white-text" ></i> Instagram</a></li><br>
+              <li><a class=" white-text" href=""><i class="fab fa-whatsapp white-text"></i> Whatsap</a></li> <br>
+              <li><a class="  white-text" href=""> <i class="fab fa-telegram white-text"></i>Telegram</a></li> <br>
+              <li><a class="  white-text" href=""><i class="fab fa-twitter  white-text"></i>Twitter</a> </li>
+           </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright #3e2723 brown darken-4">
+        <div class=" container center-align"> &copy; Julius Mallya </div>
+      </div>
+</footer>
+
+
+
+
+
+
+
+
 {% block content %}
 
 {% endblock content %}
@@ -134,7 +229,8 @@
   <script>
     $(document).ready(function(){
 
-
+      $('.slider').slider();
+      $('.scrollspy').scrollSpy();
       M.AutoInit();
     });
   </script>
