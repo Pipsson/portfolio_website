@@ -13,7 +13,6 @@ import os
 from pathlib import Path
 import django_heroku
 import dj_database_url
-#from decouple import config
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -50,7 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware' # added during deployment
+    'whitenoise.middleware.WhiteNoiseMiddleware' ,# added during deployment
 ]
 
 ROOT_URLCONF = 'portfolio.urls'
@@ -118,7 +117,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-STATICFILES_STORAGE = 'Whitenoise.storage.CompressedManifestStaticFilesStrorage'  #deployment
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStrorage'  #deployment
 STATIC_URL = 'static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
