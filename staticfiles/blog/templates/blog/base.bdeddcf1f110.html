@@ -1,0 +1,259 @@
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--my css-->
+  <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Julius Portfolio.</title>
+  <style>
+    .myfooter{
+
+      margin-top: 20px;
+    }
+  
+    header{
+    background-image: url(/static/images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+@media screen and (max-width: 670px){
+
+          header{
+              min-height: 500px;
+          }
+      }
+  </style>
+</head>
+<body class=" #212121 grey darken-4">
+
+  <!-- navbar -->
+    <header >
+         <nav class="nav-wrapper #000000 black">
+            <div class="container">
+              
+                <a href="#" class="brand-logo">Julius Mallya</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                  <i class="material-icons">menu</i>
+                </a>
+                <ul class=" right hide-on-med-and-down">
+                    <li><a href="#about" class="tooltipped"  data-position="down" data-tooltip="About Me"> About Me </a></li>
+                    <li><a href="#contact" class="tooltipped"  data-position="down" data-tooltip="Contact Me"> Contact Me</a></li>
+                    <li><a href="#services" class="tooltipped"  data-position="down" data-tooltip="My services">My services</a></li>
+                    <li><a href="#moto"class="tooltipped"  data-position="down" data-tooltip="My moto">My Motto</a></li>
+                    <li><a href="#works"class="tooltipped"  data-position="down" data-tooltip="About Me">View my  Works</a></li>
+                </ul>
+                <ul class="sidenav black" id="mobile-menu">
+                  <li><a class="white-text" href="#">About Me</a></li>
+                  <li><a  class="white-text" href="#">Website's</a></li>
+                  <li><a  class="white-text" href="#">Contacts</a></li>
+                  <li><a  class="white-text" href="#">Services</a></li>
+                  <li><a  class="white-text"  href="#">My motto</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    </header>
+
+  <!-- photo / grid -->
+  
+  <!-- parallax -->
+
+  <!-- services / tabs -->
+
+<section class="container section  scrollspy" id="services">
+  <div class="row">
+    <div class="col l4 s12">
+      <p class="white-text"> SERVICES</p>
+      <p class=" white-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+      
+    </div>
+   <div class="col l6 offset-l2 ">
+    <ul class="tabs">
+      <li class="s6 col tab">
+        <a href="#website_designing" class="black-text">Website Designing</a>
+      </li>
+       <li class="s6 col tab">
+        <a href="#website_developing" class="black-text">Website Developing</a>
+      </li>
+    </ul>  
+    <div class="s12 col" id="website_developing">
+      <P class="flow-text white-text text-darken-3">WEBSITE DEVELOPING</P>
+      <p class="white-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+    </div>
+     <div class="s12 col" id="website_designing">
+      <P class="flow-text white-text text-darken-3">WEBSITE DESIGNING</P>
+      <p class=" white-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptas omnis blanditiis magnam
+         repellat, nesciunt nam rem voluptatum sequi
+         deserunt et provident! Excepturi, magni? Suscipit optio nihil sequi quisquam alias.
+      </p>
+    </div>
+  </div>
+   </div>
+  </div>
+</section>
+  <!-- parallax -->
+ <div class="parallax-container">
+    <div class="parallax">
+      <img src="/static/images/team.jpg" class="responsive-img" alt="">
+    </div>
+  </div>
+  <!-- contact form -->
+<div class="container" id="about">
+  <div class="row">
+    <div class="col s12 l6">
+      <p class="white-text"> ABOUT ME</p>
+       <p class="white-text">My Name is Julius Mallya:
+       I am fullstack webdeveloper:
+       I specialize on alots of technlogies specially used for backend and frontent: 
+       Below are some of my technlogies i got experiences:</p>
+       <ul>
+         <li class="white-text">Python</li>
+         <li class="white-text">JavaScript</li>
+         <li class="white-text">HTML5</li>
+         <LI class="white-text">CSS</LI>
+         <li class="white-text">Materialize Css</li>
+         <li class="white-text">Bulma</li>
+         <li class="white-text">Django Python Flamework</li>
+         <li class="white-text">Github and Git</li>
+         <li class="white-text">Figma </li>
+
+
+
+       </ul>
+    </div>
+    <div class="col s12 l6 push-l2 white-text">
+      <p >HOW I OPTIMIZE  THOSE TECHNOLOGIES</p>
+      <p>This a website should be interacted well then JavaScript is used to ensure my website is 
+        flexible with chrome also this a page should be well divided then HTML5 is in position . Also 
+        for making a website to be cool and beuty then Materialize Css , Bulma and CSS are in position to tackle it.
+        As a developer you should be able to work on Team then Github is in position to make sure all thing go as planned.
+        Also as developer you should be able to track you code and to manage yourn code then Git is a great tool I use to manage my codes.
+
+
+      </p>
+    </div>
+  </div>
+</div>
+  <!-- contact form -->
+
+  <div class="slider  " id="moto">
+    <ul class="slides">
+      <li>
+        <img src="/static/images/coding.jpg"> <!-- random image -->
+        <div class="caption center-align">
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/coding2.jpg"> <!-- random image -->
+        <div class="caption left-align">
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/hosting.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Welcome  For Good and  Quality websites.</h3>
+          <button class="btn "> EMAIL ME NOW</button>
+        </div>
+      </li>
+      <li>
+        <img src="/static/images/webserver.jpg"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- footer -->
+<footer class="page-footer grey darken-3 myfooter" id="contact" >
+      <div class="container">
+        <div class="row">
+          <div class="col s12  l5">
+              <p > <a class="white-text " href="#">ANY PROJECT ? TELL ME
+                <i class="material-icons left">work</i>
+                </a></p>
+            <div class="input-field form-below">
+              <i class="material-icons prefix">email</i>
+              <input type="email" class="email">
+              <label for="email" class="white-text" > Your Email</label>
+            </div>
+            <div class="input-field form-below">
+              <i class="material-icons prefix">message</i>
+              <textarea  id="message" class="materialize-textarea"></textarea>
+              <label for="message" class="white-text" > Tell Me Your Project</label>
+            </div>
+           
+            <button class="btn waves-effect waves-light black" type="submit" name="action">SUBMIT NOW
+              <i class="material-icons right white-text">send</i>
+            </button>
+           </form>
+          </div>
+          <div class="col s12 l5 offset-l2">
+            
+           <P>
+            <a  class="white-text" href="#">CONTACT ME
+                <i class="material-icons left">phone</i> <br>
+            </a>
+           <form action="">
+           
+           <ul class="">
+              <li><a class=" white-text" href=""> <i class="fab fa-instagram white-text" ></i> Instagram</a></li><br>
+              <li><a class=" white-text" href=""><i class="fab fa-whatsapp white-text"></i> Whatsap</a></li> <br>
+              <li><a class="  white-text" href=""> <i class="fab fa-telegram white-text"></i>Telegram</a></li> <br>
+              <li><a class="  white-text" href=""><i class="fab fa-twitter  white-text"></i>Twitter</a> </li>
+           </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright #3e2723 brown darken-4">
+        <div class=" container center-align"> &copy; Julius Mallya </div>
+      </div>
+</footer>
+
+
+
+
+
+
+
+
+{% block content %}
+
+{% endblock content %}
+
+
+
+
+
+  <!-- Compiled and minified JavaScript -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.slider').slider();
+      $('.scrollspy').scrollSpy();
+      M.AutoInit();
+    });
+  </script>
+</body>
+</html>
